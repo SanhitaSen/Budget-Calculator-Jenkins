@@ -1,0 +1,59 @@
+@import '../../main-styles.scss';
+.top-bar
+{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    background: linear-gradient(75deg, rgb(191, 153, 229), rgb(157, 196, 231));
+    //center the h1 tag vertically and horizontally
+    justify-content: center;
+    align-items: center;
+    h1
+    {
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        text-shadow: 1px 2px 4px white;
+        text-transform: uppercase;
+
+    };
+}
+
+.total-budget-section
+{
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    height: 180px;
+    background:linear-gradient(75deg, rgb(100, 3, 95), rgb(18, 1, 46)) ;
+    h2
+    {
+        font-weight: 400;
+        color: white;
+        font-size: 60px;
+        &.green
+        {
+            color: lighten($green, 40%);
+        }
+        &.red
+        {
+            color: lighten($red, 40%);;
+        }
+    }
+    justify-content: center;
+    align-items: center;
+}
+
+.add-item-section
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .add-item-container
+    {
+        width: 680px;
+       
+    }
+}

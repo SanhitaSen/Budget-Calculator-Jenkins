@@ -1,0 +1,9 @@
+<div class="root">
+  <div class="budget-item income" [ngClass] = "{'income': item.amount>=0, 'expense' : item.amount<0 }">
+    <div class="description">
+      <p>{{item.description}}</p>
+    </div>
+    <div class="amount"><p>{{item.amount}}</p></div>
+  </div>
+  <pre class="x-icon-button" style="font-size: 20px;" (click) = "onXClick()"><span style="position: relative;top: -15px; right: 8px;">X </span></pre>
+</div>
